@@ -151,6 +151,9 @@ CREATE TABLE `tbl_customers` (
 INSERT INTO `tbl_customers` (`id`, `name`, `address`, `city`, `country`, `zip`, `phone`, `email`, `pass`) VALUES
 (1, 'Delwar J Imran', 'Malibagh, Dhaka', 'Dhaka', 'Bangladesh', '1219', '01974353555', 'monirdhk.it@gmail.com', '202cb962ac59075b964b07152d234b70');
 
+INSERT INTO `tbl_customers` (`id`, `name`, `address`, `city`, `country`, `zip`, `phone`, `email`, `pass`) VALUES
+(3, 'hung', 'th', 'th', 'th', '1219', '23', 'hungit@gmail.com', '12345678');
+
 -- --------------------------------------------------------
 
 --

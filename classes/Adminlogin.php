@@ -1,11 +1,11 @@
-<?php 
+<?php
 $filepath = realpath(dirname(__FILE__));
-include($filepath.'/../lib/Session.php');
+include($filepath . '/../lib/Session.php');
 Session::checkLogin();
-include_once($filepath.'/../lib/Database.php');
-include_once($filepath.'/../helpers/Format.php');
+include_once($filepath . '/../lib/Database.php');
+include_once($filepath . '/../helpers/Format.php');
 
- ?>
+?>
 <?php
 /**
  * Adminlogin Class
@@ -34,6 +34,7 @@ class Adminlogin
         } else {
             $query = "SELECT * FROM tbl_admin WHERE adminUser = '$adminUser' AND adminPass = '$adminPass'";
             $result = $this->db->select($query);
+            log("hello");
             if ($result != false) {
                 $value = $result->fetch_assoc();
                 Session::set("adminlogin", true);
