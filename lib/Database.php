@@ -1,6 +1,6 @@
-<?php 
+<?php
 $filepath = realpath(dirname(__FILE__));
-include_once($filepath.'/../config/config.php');
+include_once($filepath . '/../config/config.php');
 ?>
 <?php
 class Database
@@ -36,7 +36,7 @@ class Database
     public function select($query)
     {
         $result = $this->link->query($query) or
-        die($this->link->error . __LINE__);
+            die($this->link->error . __LINE__);
         if ($result->num_rows > 0) {
             return $result;
         } else {
@@ -48,7 +48,7 @@ class Database
     public function insert($query)
     {
         $insert_row = $this->link->query($query) or
-        die($this->link->error . __LINE__);
+            die($this->link->error . __LINE__);
         if ($insert_row) {
             return $insert_row;
         } else {
@@ -60,7 +60,7 @@ class Database
     public function update($query)
     {
         $update_row = $this->link->query($query) or
-        die($this->link->error . __LINE__);
+            die($this->link->error . __LINE__);
         if ($update_row) {
             return $update_row;
         } else {
@@ -72,7 +72,7 @@ class Database
     public function delete($query)
     {
         $delete_row = $this->link->query($query) or
-        die($this->link->error . __LINE__);
+            die($this->link->error . __LINE__);
         if ($delete_row) {
             return $delete_row;
         } else {

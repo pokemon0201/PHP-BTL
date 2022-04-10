@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_shop`
+-- Database: `db_shop_adidas`
 --
 
 -- --------------------------------------------------------
@@ -42,7 +42,7 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`adminId`, `adminName`, `adminUser`, `adminEmail`, `adminPass`, `lavel`) VALUES
-(1, 'Delwar J Imran', 'admin', 'admin@gmail.com', '202cb962ac59075b964b07152d234b70', 0);
+(1, 'le minh hung', 'minhhung', 'leminhhung@gmail.com', '12345678', 0);
 
 -- --------------------------------------------------------
 
@@ -305,6 +305,9 @@ ALTER TABLE `tbl_admin`
 --
 ALTER TABLE `tbl_brand`
   MODIFY `brandId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+-- AUTO_INCREMENT ??? hoi di Hung
+
 
 --
 -- AUTO_INCREMENT for table `tbl_cart`
